@@ -6,8 +6,6 @@
 
 -[LinkedIn](https://www.linkedin.com/in/kosan-aziz)
 
-### Markdown
-
 ![Image](https://cdna.artstation.com/p/users/covers/001/281/344/default/dd18496048cd9039ac5a8ddcf6fc7d1b.jpg)
 
 ### Contact
