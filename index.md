@@ -8,7 +8,7 @@
 
 -[LinkedIn](https://www.linkedin.com/in/kosan-aziz)
 
-![Image](https://cdna.artstation.com/p/users/covers/001/281/344/default/4fe17df50248e2cbc923bece0e5a7c30.jpg)
+![Image](https://cdna.artstation.com/p/assets/images/images/027/225/060/large/kosan-aziz-5.jpg)
 
 
 ### Contact
