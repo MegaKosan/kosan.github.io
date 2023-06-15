@@ -1,4 +1,7 @@
-# Welcome to my rather work-in-progress website
+### Welcome to my page, currently it serves as a link collection.
+### You can check out my work below and contact information if you want to get in touch with me.
+---
+
 
 ## Links
 
