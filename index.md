@@ -8,11 +8,11 @@
 
 -[LinkedIn](https://www.linkedin.com/in/kosan-aziz)
 
-![Image](https://cdna.artstation.com/p/assets/images/images/027/225/060/large/kosan-aziz-5.jpg)
-
-
-### Contact
+## Contact
 
 **Discord:**    Kosan#6482
 
-**Email:**      kosan1@hotmail.de
+**Email:**      contact@kosan.one
+
+
+![Image](https://cdna.artstation.com/p/assets/images/images/027/225/060/large/kosan-aziz-5.jpg)
