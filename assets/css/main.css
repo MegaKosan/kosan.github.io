@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("fonts/futura.css");
+@import url("fonts/poppins.css");
 @import url("fontawesome-all.min.css");
 /*
 	Aerial by HTML5 UP
@@ -184,6 +185,7 @@ a:hover {
   width: 100%;
   background-size: cover;
   opacity: 1;
+  z-index: -2;
 }
 
 #bg_video {
@@ -192,6 +194,7 @@ a:hover {
   min-height: 100%;
   max-height: 100%;
   max-width: 100%;
+  z-index: -1;
 }
 
 video {
@@ -202,6 +205,7 @@ video {
   width: 100vw;
   -o-object-fit: cover;
      object-fit: cover;
+  z-index: -1;
 }
 
 #bg_video_overlay {
@@ -209,10 +213,8 @@ video {
   width: 100%;
   height: 100%;
   background-color: black;
-  background-blend-mode: multiply;
-  opacity: 0.6;
-  -webkit-backdrop-filter: blur(8px);
-          backdrop-filter: blur(8px);
+  opacity: 0.5;
+  z-index: 0;
 }
 
 /* Overlay */
@@ -325,6 +327,7 @@ video {
   font-weight: 900;
   letter-spacing: -0.035em;
   line-height: 1em;
+  font-family: "Futura", sans-serif;
 }
 #header p {
   font-size: 1.25em;
@@ -514,6 +517,9 @@ video {
   body, input, select, textarea {
     font-size: 11pt;
   }
+  span {
+    font-size: 9pt;
+  }
   /* BG */
   @-webkit-keyframes bg {
     0% {
@@ -557,6 +563,9 @@ video {
 }
 /* Mobile (Portrait) */
 @media screen and (max-width: 480px) {
+  span {
+    font-size: 7pt;
+  }
   /* BG */
   @-webkit-keyframes bg {
     0% {
