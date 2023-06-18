@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -15,10 +15,10 @@
 // Breakpoints.
 
 	@include breakpoints((
-		wide:      ( 1281px,  1680px ),
-		normal:    ( 737px,   1280px ),
-		mobile:    ( 481px,   736px  ),
-		mobilep:   ( null,    480px  )
+		wide:		( 1281px,  1680px ),
+		normal:		( 737px,   1280px ),
+		mobile:		( 481px,   736px  ),
+		mobilep:	( null,    480px  )
 	));
 
 // Mixins.
@@ -141,7 +141,7 @@
 
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-size: 15pt;
 		font-weight: 300 !important;
 		letter-spacing: -0.025em;
@@ -159,6 +159,9 @@
 			border-color: transparent;
 		}
 	}
+
+
+
 
 /* Icon */
 
@@ -194,10 +197,9 @@
 	@include vendor('animation', 'wrapper #{_duration(wrapper)} forwards');
 	height: 100%;
 	width: 100%;
-	left: 0;
 	opacity: 0;
-	position: fixed;
-	top: 0;
+	position:absolute;
+	margin:0px;
 }
 
 /* BG */
@@ -211,31 +213,40 @@
 	/* Set your background with this */
 	background: _misc(bg);
 	background-repeat: no-repeat;
+	margin: auto;
+	position: relative;
 	height: 100%;
 	width: 100%;
 	background-size: cover;
-	left: 0;
 	opacity: 1;
-	position: center;
-	top: 0;
 }
 
 #bg_video {
-	//position:center;
+	position: absolute;
 	min-width: 100%;
 	min-height: 100%;
-	background-size: cover;
-	resize: both
+	max-height: 100%;
+	max-width: 100%;
+}
+
+video {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	height: 100vh;
+	width: 100vw;
+	object-fit: cover;
 }
 #bg_video_overlay {
-	position:fixed;
-	margin:0px;
+	position: inherit;
 	width: 100%;
 	height: 100%;
-	background-color:black;
-	color:rgb(0,0,0);
-	opacity:0.6;
+	background-color: black;
+	background-blend-mode: multiply;
+	opacity: 0.6;
+	backdrop-filter: blur(8px);
 }
+
 	//@include bg(_misc(bg-width) * 1.5);
 
 /* Overlay */
@@ -330,7 +341,7 @@
 			@include vendor('transform', 'translate3d(0,0,0)');
 			display: inline-block;
 			height: _size(nav-icon-wrapper);
-			line-height: _size(nav-icon-wrapper) * 1.1;
+			line-height: _size(nav-icon-wrapper) * 1.0;
 			opacity: 0;
 			position: relative;
 			top: 0;
@@ -391,17 +402,17 @@
 
 /* Footer */
 
-	#footer {
-		@include vendor('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%)');
-		bottom: 0;
-		cursor: default;
-		height: 6em;
-		left: 0;
-		line-height: 8em;
-		position: absolute;
-		text-align: center;
-		width: 100%;
-	}
+#footer {
+	@include vendor('background-image', 'linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%)');
+	bottom: 0;
+	cursor: default;
+	height: 6em;
+	left: 0;
+	line-height: 8em;
+	position: absolute;
+	text-align:center;
+	width: 100%;
+}
 
 /* Wide */
 

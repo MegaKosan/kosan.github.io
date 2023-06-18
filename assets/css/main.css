@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("fontawesome-all.min.css");
 /*
 	Aerial by HTML5 UP
@@ -95,7 +95,7 @@ body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 
 body, input, select, textarea {
   color: #ea4e4e;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15pt;
   font-weight: 300 !important;
   letter-spacing: -0.025em;
@@ -159,14 +159,13 @@ a:hover {
   }
 }
 #wrapper {
-  -webkit-animation: wrapper 3s forwards;
-  animation: wrapper 3s forwards;
+  -webkit-animation: wrapper 2s forwards;
+  animation: wrapper 2s forwards;
   height: 100%;
   width: 100%;
-  left: 0;
   opacity: 0;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  margin: 0px;
 }
 
 /* BG */
@@ -179,30 +178,41 @@ a:hover {
   /* Set your background with this */
   background: #333131 center center;
   background-repeat: no-repeat;
+  margin: auto;
+  position: relative;
   height: 100%;
   width: 100%;
   background-size: cover;
-  left: 0;
   opacity: 1;
-  position: center;
-  top: 0;
 }
 
 #bg_video {
+  position: absolute;
   min-width: 100%;
   min-height: 100%;
-  background-size: cover;
-  resize: both;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #bg_video_overlay {
-  position: fixed;
-  margin: 0px;
+  position: inherit;
   width: 100%;
   height: 100%;
   background-color: black;
-  color: rgb(0, 0, 0);
+  background-blend-mode: multiply;
   opacity: 0.6;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 /* Overlay */
@@ -213,7 +223,7 @@ a:hover {
 	}
 
 #overlay {
-	@include vendor('animation', 'overlay 1.5s 1.5s forwards');
+	@include vendor('animation', 'overlay 1.5s 0.5s forwards');
 	background-attachment: fixed, fixed;
 	background-image: url('images/overlay-pattern.png'), url('images/overlay.svg');
 	background-position: top left, center center;
@@ -295,8 +305,8 @@ a:hover {
   }
 }
 #header {
-  -webkit-animation: header 1s 2.25s forwards;
-  animation: header 1s 2.25s forwards;
+  -webkit-animation: header 1s 1.25s forwards;
+  animation: header 1s 1.25s forwards;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-transform: translate3d(0,0,0);
@@ -334,51 +344,51 @@ a:hover {
   transform: translate3d(0,0,0);
   display: inline-block;
   height: 5.35em;
-  line-height: 5.885em;
+  line-height: 5.35em;
   opacity: 0;
   position: relative;
   top: 0;
   width: 5.35em;
 }
 #header nav li:nth-child(1) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+#header nav li:nth-child(2) {
+  -webkit-animation-delay: 1.75s;
+  animation-delay: 1.75s;
+}
+#header nav li:nth-child(3) {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#header nav li:nth-child(4) {
+  -webkit-animation-delay: 2.25s;
+  animation-delay: 2.25s;
+}
+#header nav li:nth-child(5) {
   -webkit-animation-delay: 2.5s;
   animation-delay: 2.5s;
 }
-#header nav li:nth-child(2) {
+#header nav li:nth-child(6) {
   -webkit-animation-delay: 2.75s;
   animation-delay: 2.75s;
 }
-#header nav li:nth-child(3) {
+#header nav li:nth-child(7) {
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
 }
-#header nav li:nth-child(4) {
+#header nav li:nth-child(8) {
   -webkit-animation-delay: 3.25s;
   animation-delay: 3.25s;
 }
-#header nav li:nth-child(5) {
+#header nav li:nth-child(9) {
   -webkit-animation-delay: 3.5s;
   animation-delay: 3.5s;
 }
-#header nav li:nth-child(6) {
+#header nav li:nth-child(10) {
   -webkit-animation-delay: 3.75s;
   animation-delay: 3.75s;
-}
-#header nav li:nth-child(7) {
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-#header nav li:nth-child(8) {
-  -webkit-animation-delay: 4.25s;
-  animation-delay: 4.25s;
-}
-#header nav li:nth-child(9) {
-  -webkit-animation-delay: 4.5s;
-  animation-delay: 4.5s;
-}
-#header nav li:nth-child(10) {
-  -webkit-animation-delay: 4.75s;
-  animation-delay: 4.75s;
 }
 #header nav a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
