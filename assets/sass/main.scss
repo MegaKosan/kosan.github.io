@@ -3,9 +3,10 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
+@import url("hover_box.css");
 @import url("fonts/futura.css");
 @import url("fonts/poppins.css");
-@import url("fontawesome-all.min.css");
+@import url("../fontawesome/css/all.min.css");
 
 /*
 	Aerial by HTML5 UP
@@ -165,7 +166,7 @@
 
 
 /* Icon */
-
+/* MAYBE NOT NEEDED ANYMORE SINCE FONTAWESOME 6 ?? SEEMS TO WORK WITHOUT, BY USING FA'S BUILT IN .i
 	.icon {
 		@include icon;
 		position: relative;
@@ -182,7 +183,7 @@
 
 		&.brands {
 			&:before {
-				font-family: 'Font Awesome 5 Brands';
+				font-family: 'Font Awesome 6 Brands';
 			}
 		}
 	}
