@@ -3,7 +3,6 @@
 @import 'libs/mixins';
 @import 'libs/vendor';
 @import 'libs/breakpoints';
-@import url("hover_box.css");
 @import url("fonts/futura.css");
 @import url("fonts/poppins.css");
 @import url("../fontawesome/css/all.min.css");
@@ -166,7 +165,7 @@
 
 
 /* Icon */
-/* MAYBE NOT NEEDED ANYMORE SINCE FONTAWESOME 6 ?? SEEMS TO WORK WITHOUT, BY USING FA'S BUILT IN .i
+/* MAYBE NOT NEEDED ANYMORE SINCE FONTAWESOME 6 ?? SEEMS TO WORK WITHOUT
 	.icon {
 		@include icon;
 		position: relative;
@@ -187,6 +186,7 @@
 			}
 		}
 	}
+*/
 
 /* Wrapper */
 
